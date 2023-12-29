@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshoot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/EndaleKinfe/product-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://endalekinfe.github.io/product-preview-card-component-main/)
+- Solution URL: [solution URL](https://github.com/EndaleKinfe/product-preview-card-component-main)
+- Live Site URL: [Live site URL](https://endalekinfe.github.io/product-preview-card-component-main/)
 
 ## My process
 
