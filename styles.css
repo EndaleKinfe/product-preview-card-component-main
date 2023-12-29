@@ -2,6 +2,7 @@
 
 :root{
     --dark-cyan: hsl(158, 36%, 37%);
+    --very-dark-cyan: hsl(159, 56%, 20%) ;
     --cream: hsl(30, 38%, 92%);
     --very-dark-blue: hsl(212, 21%, 14%);
     --dark-grayish-blue: hsl(228, 12%, 48%);
@@ -71,6 +72,7 @@ p, .oldprice{
 h2{
     font-family: "Fraunces";
     font-size: 30px;
+    color: var(--very-dark-blue);
 }
 
 .price{
@@ -78,6 +80,7 @@ h2{
     color: var(--dark-cyan);
     font-size: 32px;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .oldprice{
@@ -91,8 +94,31 @@ button{
     background-color: var(--dark-cyan);
     border: none;
     border-radius: 7px;
+    color: var(--white);
+    font-size: 20;
+    font-weight: bold;
 }
 
+button:hover, button:active{
+    background-color: var(--very-dark-cyan);
+}
+
+
+  .attribution {
+      font-size: 11px;
+      text-align: center;
+  }
+
+  .attribution a {
+      color: hsl(228, 45%, 44%);
+  }
+
+
+@media screen and (min-width:1440px) {
+    .container{
+        margin: 12% auto;
+    }
+}
 @media screen and (max-width: 768px) {
     .container {
         width: 500px;
@@ -107,14 +133,24 @@ button{
     }
 }
 
+@media screen and (max-width: 530px) {
+
+    .container{
+        width: 440px;
+    }
+    
+    button{
+        width: 90%;
+    }
+}
 
 @media screen and (max-width: 430px) {
     
     .container {
         width: 365px;
-        height: 85vh;
+        height: 600px;
         flex-direction: column;
-        margin: 5% auto;
+        margin: 10% auto;
     }
 
     .left {
@@ -129,10 +165,7 @@ button{
         flex: 1;
         width: 90%;
         height: 50%;
-        background-color: var(--white);
-        border-radius: 0 0 20px 20px;
-        text-align: left;
-        padding: 25px;
+        border-radius: 0 0 10px 10px ;
     }
 
     h2,
@@ -141,22 +174,7 @@ button{
         max-width: 360px;
     }
 
-    p,
-    .oldprice {
-        color: var(--dark-grayish-blue);
-        font-weight: normal;
-        font-size: 14px;
-    }
 
-    .title {
-        text-transform: uppercase;
-        letter-spacing: 3px;
-    }
-
-    h2 {
-        font-family: "Fraunces";
-        font-size: 30px;
-    }
 
     .price {
         font-family: "Fraunces";
@@ -165,17 +183,16 @@ button{
         margin-bottom: 5px;
     }
 
-    .oldprice {
-        text-decoration: line-through;
-        vertical-align: middle;
-    }
 
     button {
         width:85%;
         height: 40px;
-        background-color: var(--dark-cyan);
-        border: none;
-        border-radius: 7px;
-        color: var(--white)
+       
     }
+
+    .attribution {
+            font-size: 9px;
+            width: 150px;
+            margin: 0 auto;
+        }
 }
